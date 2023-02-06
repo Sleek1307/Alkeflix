@@ -38,7 +38,7 @@ export default function Login() {
         swal("Perfecto", "Ingresaste correctamente", "success");
         const tokenRecived = res.data.token;
         sessionStorage.setItem("token", tokenRecived);
-        navigate("/inicio");
+        navigate("/alkeflix/inicio");
       });
   };
 
@@ -46,7 +46,7 @@ export default function Login() {
 
   return (
     <>
-      {token && <Navigate to={"/inicio"} />}
+      {token && <Navigate to={"/alkeflix/inicio"} />}
       <form
         onSubmit={submitHandler}
         className="w-100 h-100 d-flex justify-content-center align-items-center"

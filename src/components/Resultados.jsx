@@ -39,7 +39,7 @@ export default function Resultados() {
                     <h5 className="card-title" >{movie.title}</h5>
                     <p className="card-text overflow-hidden">{movie.overview.split('').length <= 200 ? movie.overview : movie.overview.substring(0, 100).trim() + '...'}s</p>
                   </div>
-                  <Link to={`/detalle?movieId=${movie.id}`} className="btn btn-primary mt-3">Go somewhere</Link>
+                  <Link to={`/alkeflix/detalle?movieId=${movie.id}`} className="btn btn-primary mt-3">Go somewhere</Link>
                 </div>
               </div>
             </div>

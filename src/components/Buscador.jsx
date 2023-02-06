@@ -21,7 +21,7 @@ export default function Buscador() {
     } else if (keyword.trim().length < 4) {
       swal('¡Error!', 'Tienes que escribir mas de 4 caracteres', 'error')
     } else {
-      navigate(`/resultados?keyword=${keyword.trim()}`);
+      navigate(`/alkeflix/resultados?keyword=${keyword.trim()}`);
     }
   }
 

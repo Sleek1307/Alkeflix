@@ -70,11 +70,11 @@ function App() {
       <Header favoritesAmount={favorites.length} />
       <div className='container container-fluid mt-3'>
         <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/inicio' element={<Listado favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
-          <Route path='/detalle' element={<Detalle />} />
-          <Route path='/resultados' element={<Resultados favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
-          <Route path='/favoritos' element={<Favoritos favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
+          <Route path='/alkeflix' element={<Login />} />
+          <Route path='/alkeflix/inicio' element={<Listado favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
+          <Route path='/alkeflix/detalle' element={<Detalle />} />
+          <Route path='/alkeflix/resultados' element={<Resultados favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
+          <Route path='/alkeflix/favoritos' element={<Favoritos favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
         </Routes>
       </div>
       <Footer />

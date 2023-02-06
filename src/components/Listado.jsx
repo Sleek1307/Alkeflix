@@ -23,7 +23,7 @@ export default function Listado(props) {
 
   return (
     <>
-      {!token && <Navigate to={'/'} />}
+      {!token && <Navigate to={'/alkeflix'} />}
       <div className="row">
         {movieResponse.map((movie, index) => {
           return (
@@ -46,7 +46,7 @@ export default function Listado(props) {
                     <h5 className="card-title" >{movie.title}</h5>
                     <p className="card-text overflow-hidden">{movie.overview.split('').length <= 200 ? movie.overview : movie.overview.substring(0, 100).trim() + '...'}</p>
                   </div>
-                  <Link to={`/detalle?movieId=${movie.id}`} className="btn btn-primary mt-3">Ver</Link>
+                  <Link to={`/alkeflix/detalle?movieId=${movie.id}`} className="btn btn-primary mt-3">Ver</Link>
                 </div>
               </div>
             </div>
