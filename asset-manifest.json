@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alkeflix/static/css/main.1f210bfc.css",
+    "main.js": "/alkeflix/static/js/main.32b252b7.js",
+    "index.html": "/alkeflix/index.html",
+    "main.1f210bfc.css.map": "/alkeflix/static/css/main.1f210bfc.css.map",
+    "main.32b252b7.js.map": "/alkeflix/static/js/main.32b252b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f210bfc.css",
+    "static/js/main.32b252b7.js"
+  ]
+}
