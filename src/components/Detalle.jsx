@@ -24,15 +24,10 @@ export default function Detalle() {
         }
       );
     };
-
-    console.log(token)
   }, []);
-
-  useEffect(() => {console.log(movieData);}, [movieData])
 
   return (
     <>
-      {!token && <Navigate to={'/alkeflix'} />}
 
       {movieData &&
         <div className='w-100 d-flex justify-content-center'>

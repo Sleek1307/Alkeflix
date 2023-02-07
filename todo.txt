@@ -1,0 +1,1 @@
+1- Mostrar los errores al usuario de forma amigable al consultar con la API en Detalle.jsx 

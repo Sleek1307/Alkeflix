@@ -4,6 +4,7 @@ import swal from "sweetalert";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const token = sessionStorage.getItem("token");
   const navigate = useNavigate();
   const submitHandler = (e) => {
     e.preventDefault();
@@ -42,11 +43,11 @@ export default function Login() {
       });
   };
 
-  let token = sessionStorage.getItem("token");
-
   return (
+    
     <>
       {token && <Navigate to={"/alkeflix/inicio"} />}
+
       <form
         onSubmit={submitHandler}
         className="w-100 h-100 d-flex justify-content-center align-items-center"
