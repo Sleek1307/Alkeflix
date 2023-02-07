@@ -9,7 +9,6 @@ export default function Detalle() {
   const [movieData, setMovieData] = useState(null);
 
   const movieId = query.get('movieId');
-  const token = sessionStorage.getItem('token');
 
   useEffect(() => {
     if (!movieData) {
@@ -28,7 +27,6 @@ export default function Detalle() {
 
   return (
     <>
-
       {movieData &&
         <div className='w-100 d-flex justify-content-center'>
           <div className='row w-75'>

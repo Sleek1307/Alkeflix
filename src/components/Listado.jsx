@@ -6,7 +6,6 @@ import swal from 'sweetalert';
 export default function Listado(props) {
 
   const { favorites } = props;
-  const token = sessionStorage.getItem('token');
   const [movieResponse, setMovieResponse] = useState([]);
 
   useEffect(() => {
@@ -23,7 +22,6 @@ export default function Listado(props) {
 
   return (
     <>
-      {!token && <Navigate to={'/alkeflix'} />}
       <div className="row">
         {movieResponse.map((movie, index) => {
           return (

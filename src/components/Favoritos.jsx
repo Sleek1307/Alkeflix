@@ -2,11 +2,9 @@ import { Link, Navigate } from "react-router-dom";
 
 export default function Favoritos(props) {
   const { favorites, addOrRemoveFromFavs } = props;
-  let token = sessionStorage.getItem("token");
 
   return (
     <>
-      {!token && <Navigate to={"/alkeflix"} />}
       <h1>Favoritos</h1>
       <div className="row">
         {favorites.map((movie, index) => {

@@ -1,7 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 //Componentes
-import Login from './components/Login';
 import Listado from './components/Listado';
 import Detalle from './components/Detalle';
 import Header from './components/Header';
@@ -70,7 +69,7 @@ function App() {
       <Header favoritesAmount={favorites.length} />
       <div className='container container-fluid mt-3'>
         <Routes>
-          <Route path='/alkeflix' element={<Login />} />
+          <Route path='/' element={<Navigate to={'/alkeflix/inicio'}/>}/>
           <Route path='/alkeflix/inicio' element={<Listado favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
           <Route path='/alkeflix/detalle' element={<Detalle />} />
           <Route path='/alkeflix/resultados' element={<Resultados favorites={favorites} addOrRemoveFromFavs={addOrRemoveFromFavs} />} />
